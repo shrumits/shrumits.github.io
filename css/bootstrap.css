@@ -935,7 +935,8 @@ pre code {
 }
 
 .col-xs-2 {
-  width: 16.66667%;
+  width: 25.66667%;
+  margin-left: 39%;
 }
 
 .col-xs-3 {

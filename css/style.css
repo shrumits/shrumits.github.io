@@ -28,6 +28,21 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+.baraat_pic {
+  position: relative;
+  width:100%;
+  height: 300px;
+}
+
+#divider {
+  height: 50px;
+}
+
+iframe {
+  border: 1px solid black;
+}
+
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -47,13 +62,13 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #bb5639;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F14E95;
+  color: #bb5639;
   outline: none;
   text-decoration: none;
 }
@@ -66,26 +81,26 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #F14E95;
+  background: #bb5639;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F14E95;
+  background: #bb5639;
 }
 
 ::selection {
   color: #fff;
-  background: #F14E95;
+  background: #bb5639;
 }
 
 .fh5co-nav {
@@ -108,6 +123,8 @@ h3 {
   padding: 0;
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
+  font-weight: 500;
+  color: white;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -200,7 +217,7 @@ h3 {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #F14E95;
+  color: #bb5639;
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
@@ -282,7 +299,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -300,7 +317,7 @@ h3 {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -313,7 +330,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -324,12 +341,23 @@ h3 {
     height: 600px;
   }
 }
-.fh5co-cover .display-t,
-.fh5co-cover .display-tc {
-  height: 900px;
+.fh5co-cover .display-t  {
+  height: 700px;
   display: table;
   width: 100%;
 }
+
+
+.fh5co-cover .display-tc {
+  height: 700px;
+  width: 100%;
+}
+
+.fh5co-cover .display-tcl, .fh5co-cover .display-tcr {
+  height: 700px;
+  width: 25%;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
@@ -359,14 +387,15 @@ h3 {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  height: 550px;
   float: left;
 }
+
 #fh5co-counter .display-t,
 #fh5co-counter .display-tc,
 #fh5co-event .display-t,
 #fh5co-event .display-tc {
-  height: 700px;
+  height: 100%;
   display: table;
   width: 100%;
 }
@@ -389,7 +418,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -772,7 +801,7 @@ h3 {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F14E95;
+  color: #bb5639;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -791,7 +820,7 @@ h3 {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #F14E95;
+  color: #bb5639;
   position: absolute;
   left: 0;
   top: .05em;
@@ -870,6 +899,7 @@ form label {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h2,
@@ -883,7 +913,7 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
-  color: #F14E95;
+  color: #bb5639;
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -939,6 +969,7 @@ form label {
 .simply-countdown {
   /* The countdown */
   margin-bottom: 2em;
+  margin-top: 4em;
 }
 
 .simply-countdown > .simply-section {
@@ -946,7 +977,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: rgba(192, 80, 50, 0.9);
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -988,7 +1019,7 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   font-size: 12px;
   /* words */
@@ -1003,7 +1034,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 3em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1036,8 +1067,8 @@ form label {
 }
 
 .heart {
-  position: absolute;
-  top: 4em;
+  position: relative;
+  /* top: 4em; */
   left: 0;
   right: 0;
   z-index: 99;
@@ -1047,7 +1078,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: #bb5639;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1070,8 +1101,8 @@ form label {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
-  font-size: 30px;
+  color: #bb5639;
+  font-size: 35px;
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1163,7 +1194,7 @@ form label {
   height: 90px;
   font-size: 40px;
   line-height: 40px;
-  color: #F14E95;
+  color: #bb5639;
 }
 .feature-center p, .feature-center h3 {
   margin-bottom: 30px;
@@ -1174,9 +1205,9 @@ form label {
   color: #5d5d5d;
 }
 
-.fh5co-heading {
-  margin-bottom: 5em;
-}
+/* .fh5co-heading {
+  margin-bottom: 2em;
+} */
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
@@ -1185,7 +1216,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #bb5639;
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1220,7 +1251,7 @@ form label {
   display: block;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
+  color: #bb5639;
   font-weight: 300;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure {
@@ -1312,7 +1343,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #F14E95;
+  color: #bb5639;
 }
 .feature-left .feature-copy {
   float: left;
@@ -1340,7 +1371,7 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
@@ -1378,7 +1409,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background: #bb5639;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1422,7 +1453,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid #bb5639;
 }
 
 #fh5co-offcanvas {
@@ -1675,9 +1706,9 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
+  background: #bb5639;
   color: #fff;
-  border: 2px solid #F14E95;
+  border: 2px solid #bb5639;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #f366a3 !important;
@@ -1685,11 +1716,11 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F14E95;
-  border: 2px solid #F14E95;
+  color: #bb5639;
+  border: 2px solid #bb5639;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F14E95;
+  background: #bb5639;
   color: #fff;
 }
 
@@ -1819,7 +1850,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: #bb5639;
 }
 
 .row-pb-md {
